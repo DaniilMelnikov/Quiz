@@ -1,0 +1,142 @@
+<div class="b-quiz__wrap b-quiz__wrap--edu b-quiz__wrap--index-shadow" id="price">
+    <div class="block b-quiz">
+      <div class="container">
+        <div class="b-quiz__box-wrap">
+          <div class="b-quiz__box">
+            <div class="b-quiz__tabs">
+              <div class="b-quiz__row">
+                <div class="b-quiz__col-left">
+                  <h2 class="b-quiz__title">Ответьте на 4 вопроса и получите расчет стоимости в течении 10 минут</h2>
+                  <a data-toggle="modal" data-target="#form-modal" class="b-quiz__coupon">
+                    <div class="b-quiz__coupon-text">Получите <span class="bold">скидку</span>:</div>
+                    <div class="b-quiz__coupon-num">10%</div>
+                  </a>
+                  <a class="b-quiz__info" data-toggle="modal" data-success="#success-modal" data-target="#form-modal">Чек-лист «Лицензионные требования к помещению, ремонту для образовательной лицензии»</a>
+                </div>
+                <div class="b-quiz__col-right">
+                  <div class="b-quiz__item">
+                    <div class="b-quiz__item-head">
+                      <div class="b-quiz__counter">
+                        <div class="b-quiz__counter-active">01</div>
+                        <div class="b-quiz__counter-all">/ 04</div>
+                      </div>
+                      <h3 class="b-quiz__item-title">Какой бизнес Вы планируете <span class="nowrap">открыть? *</span></h3>
+                    </div>
+                    <div class="b-quiz__form-checkbox-list">
+                      <div class="b-quiz__form-radio b-quiz__form-radio--education">
+                        <label>
+                          <input type="radio" name="business" value="med" data-next="step-1" checked>
+                          <span class="custom-checkbox-input"></span>
+                          <span class="custom-checkbox-text">Медицинский</span>
+                        </label>
+                      </div>
+                      <div class="b-quiz__form-radio b-quiz__form-radio--education">
+                        <label>
+                          <input type="radio" name="business" value="farm" data-next="step-1">
+                          <span class="custom-checkbox-input"></span>
+                          <span class="custom-checkbox-text">Фармацевтический</span>
+                        </label>
+                      </div>
+                      <div class="b-quiz__form-radio b-quiz__form-radio--education">
+                        <label>
+                          <input type="radio" name="business" value="alc" data-next="step-1">
+                          <span class="custom-checkbox-input"></span>
+                          <span class="custom-checkbox-text">Алкогольный</span>
+                        </label>
+                      </div>
+                      <div class="b-quiz__form-radio b-quiz__form-radio--education">
+                        <label>
+                          <input type="radio" name="business" value="educ" data-next="step-1">
+                          <span class="custom-checkbox-input"></span>
+                          <span class="custom-checkbox-text">Образовательный</span>
+                        </label>
+                      </div>
+                      <div class="b-quiz__form-radio b-quiz__form-radio--education">
+                        <label>
+                          <input type="radio" name="business" value="dang" data-next="step-1">
+                          <span class="custom-checkbox-input"></span>
+                          <span class="custom-checkbox-text">Обращение с опасными отходами</span>
+                        </label>
+                      </div>
+                      <div class="b-quiz__form-radio b-quiz__form-radio--education">
+                        <label>
+                          <input type="radio" name="business" value="another" data-next="step-1">
+                          <span class="custom-checkbox-input"></span>
+                          <span class="custom-checkbox-text">Другое</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="b-quiz__buttons">
+                      <button type="button" class="b-quiz__btn quiz-btn-prev hidden">Назад</button>
+                      <button type="button" class="b-quiz__btn quiz-btn-next" data-next="step-1">Далее</button>
+                    </div>
+                    <div class="b-quiz__item-note">* не является публичной офертой в соответствии с <a href="/docs/terms_of_use.pdf" target="_blank" class="blue-link">пользовательским соглашением</a>
+                    </div>
+                  </div> <!-- /.b-quiz__item -->
+                </div>
+              </div>
+            </div>
+
+
+            <div class="b-quiz__final hidden">
+                <div class="b-quiz__row">
+                  <div class="b-quiz__col-left">
+                    <h2 class="b-quiz__title">Ответьте на 4 вопроса и получите расчет стоимости в течении 10 минут</h2>
+                    <a data-toggle="modal" data-target="#form-modal" class="b-quiz__coupon">
+                      <div class="b-quiz__coupon-text-final">Ваша скидка:</div>
+                      <div class="b-quiz__coupon-num-final">10%</div>
+                    </a>
+                    <a class="b-quiz__info" data-toggle="modal" data-success="#success-modal" data-target="#form-modal">Чек-лист «Лицензионные требования к помещению, ремонту для образовательной лицензии»</a>
+                  </div>
+                  <div class="b-quiz__col-right">
+                    <div class="b-quiz__item">
+                      <div class="b-quiz__item-head">
+                        <div class="b-quiz__counter">
+                          <div class="b-quiz__counter-active">01</div>
+                          <div class="b-quiz__counter-all">/ 03</div>
+                        </div>
+                      </div>
+                      
+                      <form id="quizform" action="/send/send.php" method="post" class="b-quiz__form form-validator">
+                        <input type="hidden" id="quizform-subject" name="subject" value="Получить лицензию">
+ 			<input type="hidden" id="quizform-project_name" name="project_name" value="Заявка Образование с сайта ucgarant.ru квиз">
+                        <input type="hidden" id="quizform-business" name="business" value="">
+                        <input type="hidden" id="quizform-type" name="type" value="">
+                        <input type="hidden" id="quizform-room" name="room" value="">
+                        <input type="hidden" id="quizform-conclusion" name="conclusion" value="">
+                        <div class="form-group">
+                          <div class="custom-input-ico custom-input-name">
+                            <input type="text" class="form-control" id="quizform-name" name="name" data-error="Введите своё имя"  placeholder="Ваше имя" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-input-ico custom-input-phone">
+                            <input type="text" class="form-control" data-error="Введите корректный номер" id="quizform-phone" name="phone" placeholder="Номер телефона" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-input-ico custom-input-email">
+                            <input type="email" class="form-control" id="quizform-email" name="email" data-error="Введите свой email"  placeholder="E-mail">
+                          </div>
+                        </div>
+                        <button type="submit" class="btn b-quiz__form-btn" name="send" value="call" id="quizform-btn">Рассчитать стоимость и получить чек-лист</button>
+                        <div class="b-quiz__form-note">Нажимая на кнопку Вы даёте своё согласие на <a href="/docs/consent_to_the_processing_of_personal.pdf" target="_blank" class="link">обработку персональных данных</a></div>
+                      </form>
+                    </div> <!-- /.b-quiz__item -->
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="b-quiz__progress-wrap">
+              <div class="b-quiz__progress progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                  <span class="b-quiz__progress-num">0%</span>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    </div> <!-- /.b-quiz -->
+</div>
